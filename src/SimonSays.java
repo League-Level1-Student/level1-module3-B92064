@@ -90,11 +90,20 @@ sI.setName("SimonSays");
 sI.addKeyListener(this);
 		// 12. Create a new instance of Random
 Random r = new Random();
+int u = r.nextInt(100 - 0);
 		// 13. Use the Random and the speak method to either say 
 		// "Simon says press this key" or "Press this key"
+if(u < 50) {
+	speak("Simon says press this key");
+}
+else if(u > 50) {
+	speak("Press this key");
+}
+else {
+	speak("Press this key");
+}
 
-speak("Simon says press this key");
-speak("Press this key");
+
 		// 14. Above, set the value of simonSays to true/false appropriately
 
 		
