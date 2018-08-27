@@ -29,6 +29,7 @@ public class Jeopardy implements ActionListener {
 	private JButton firstButton;
 	private JButton secondButton;
 	private JButton thirdButton, fourthButton;
+	
 
 	private JPanel quizPanel;
 	int score = 0;
@@ -43,12 +44,16 @@ public class Jeopardy implements ActionListener {
 		JFrame frame = new JFrame();
 		quizPanel = new JPanel();
 		frame.setLayout(new BorderLayout());
+		frame.setTitle("Guess and Check");
+		frame.setVisible(true);
+		frame.pack();
 
 		// 1. Make the frame show up
 
 		// 2. Give your frame a title
 
 		// 3. Create a JPanel variable to hold the header using the createHeader method
+JPanel Header = new JPanel();
 
 		// 4. Add the header component to the quizPanel
 
