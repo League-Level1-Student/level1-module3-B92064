@@ -56,9 +56,9 @@ String q1 = JOptionPane.showInputDialog("What is a question you would like to as
    		 // 9. Find a spooky sound and put it in your default package (freesound.org)
    		  AudioClip sound = JApplet.newAudioClip(getClass().getResource("creepy-noise.wav"));
    		 // 10. Play the sound
-
+   		  playSound("creepy-noise.wav");
    		 // 11. Use the pause() method below to wait until your music has finished
-
+pause();
    		 // 12. Insert your completed Magic 8 ball recipe (http://bit.ly/Zdrf6d) here
 
    	 }
@@ -123,6 +123,12 @@ private void showAnotherImage(String imageName) {
 
     @Override
     public void mouseExited(MouseEvent e) {}
+    
+    
+    private void playSound(String CreepySound) {
+		AudioClip sound = JApplet.newAudioClip(getClass().getResource("creepy-noise.wav"));
+		sound.play();
+	}
 
 }
 

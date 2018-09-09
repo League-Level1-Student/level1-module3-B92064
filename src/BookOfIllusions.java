@@ -66,7 +66,6 @@ JFrame J = new JFrame();
 		JL = loadImageFromComputer(Jack);
 		J.add(JL);
 		// 14. pack the frame
-		J.setVisible(true);
 		J.pack();
 	}
 
