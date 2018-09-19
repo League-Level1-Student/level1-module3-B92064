@@ -6,10 +6,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class GetTweets implements ActionListener {
 	JFrame J = new JFrame();
 	JPanel P = new JPanel();
+	JTextField T = new JTextField(40);
 	JButton b1 = new JButton();
 public static void main(String[] args) {
 	GetTweets GT = new GetTweets();
@@ -18,16 +20,15 @@ public static void main(String[] args) {
 public void showButton() {
 	J.add(P);
 	P.add(b1);
+	P.add(T);
 	b1.setText("Search Twitter");
-	J.setSize(300, 300);
 	J.setVisible(true);
 	b1.addActionListener(this);
 	J.pack();
 }
 @Override
 public void actionPerformed(ActionEvent e) {
-	// TODO Auto-generated method stub
-	JButton buttonPressed = (JButton) e.getSource();
+	
 	if(e.equals(b1)) {
 		System.out.println("Tweet, Tweet");
 	}
