@@ -28,8 +28,8 @@ public void showButton() {
 	P.add(b1);
 	P.add(T2);
 	b1.addActionListener(this);
-	b1.setText("Translate Into Pig Latin!");
-	J.setTitle("Brandon's Language Translator");
+	b1.setText("Translate!");
+	J.setTitle("Say this in public");
 	J.pack();
 }
 
@@ -37,6 +37,7 @@ public void showButton() {
 public void actionPerformed(ActionEvent e) {
 	String text = T.getText();
 	isLetter(text.charAt(0));
+	T2.setText(translate(T.getText()));
 	
 }
 /**
